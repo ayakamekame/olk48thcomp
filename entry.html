@@ -1,0 +1,99 @@
+<section id="entry">
+    <style>
+        #entry {
+            padding: 60px 20px;
+            background-color: #fff;
+        }
+        .entry-container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+        .flex-row {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .entry-card {
+            flex: 1;
+            min-width: 300px;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 30px;
+            background: #fbfbfb;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        /* 要項（Bulletin）のデザイン */
+        .bulletin-list {
+            list-style: none;
+            padding: 0;
+        }
+        .bulletin-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .version-badge {
+            background: #666;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 10px;
+        }
+        /* 申し込みボタン */
+        .btn-entry {
+            display: block;
+            text-align: center;
+            background: #2d5a27;
+            color: white !important;
+            padding: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 1.1rem;
+        }
+        .btn-disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+    </style>
+
+    <div class="entry-container">
+        <h3>発行物・エントリー/ Bulletin & Entry</h3>
+
+        <div class="flex-row">
+            <div class="entry-card">
+                <div>
+                    <h4>発行物一覧</h4>
+                    <p>発行物をご確認ください。</p>
+                    <ul class="bulletin-list">
+                        <li class="bulletin-item">
+                            <span><span class="version-badge">最新</span> 要項1.0版 (2025/10/18)</span>
+                            <a href="https://japan-o-entry.com/event/getfile/9419" class="pdf-link" target="_blank">PDF</a>
+                        </li>
+                            <span><span class="version-badge">最新</span> ME・WEクラスの選考について(2026/1/23)</span>
+                            <a href="https://japan-o-entry.com/event/getfile/9904" class="pdf-link" target="_blank">PDF</a>
+                        </li>
+                        </ul>
+                </div>
+            </div>
+
+            <div class="entry-card">
+                <div>
+                    <h4>参加エントリー</h4>
+                    <p>エントリーは <strong>Japan-O-entry</strong> にて受け付けます。</p>
+                    <p style="font-size: 0.9rem; color: #666;">
+                        申込期間：4月上旬開始を予定
+                    </p>
+                </div>
+                <a href="#" class="btn-entry btn-disabled">申し込み準備中</a>
+                </div>
+        </div>
+    </div>
+</section>
