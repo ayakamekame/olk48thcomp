@@ -1,4 +1,80 @@
 <section id="info">
+    <style>
+        #info {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            padding: 40px 20px;
+            background-color: #fff;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        #info h3 {
+            font-size: 1.8rem;
+            color: #2d5a27; /* 東大OLKカラー（緑） */
+            border-bottom: 3px solid #2d5a27;
+            display: inline-block;
+            margin-bottom: 30px;
+            padding-bottom: 5px;
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+        }
+
+        .info-table th, .info-table td {
+            padding: 18px 25px;
+            border-bottom: 1px solid #eee;
+            text-align: left;
+        }
+
+        .info-table th {
+            background-color: #f8fbf8;
+            color: #444;
+            width: 25%;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .info-table td {
+            background-color: #fff;
+        }
+
+        .pdf-link {
+            display: inline-block;
+            background: #e74c3c;
+            color: #fff !important;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .pdf-link:hover {
+            background: #c0392b;
+            transform: translateY(-2px);
+        }
+
+        /* スマホで見やすくする設定 */
+        @media (max-width: 600px) {
+            .info-table th, .info-table td {
+                display: block;
+                width: 100%;
+            }
+            .info-table th {
+                background-color: #2d5a27;
+                color: #fff;
+                padding: 10px 25px;
+            }
+        }
+    </style>
+
     <div class="container">
         <h3>大会概要 / Outline</h3>
         <table class="info-table">
@@ -15,16 +91,8 @@
                 <td>長野県 蓼科町・長和町</td>
             </tr>
             <tr>
-                <th>主催</th>
-                <td>東京大学オリエンテーリングクラブ</td>
-            </tr>
-            <tr>
-                <th>主管</th>
-                <td>第48回東京大学オリエンテーリングクラブ大会運営委員会</td>
-            </tr>
-            <tr>
                 <th>テレイン</th>
-                <td>新規テレイン</td>
+                <td><span style="color:#d32f2f; font-weight:bold;">新規テレイン</span></td>
             </tr>
             <tr>
                 <th>競技形態</th>
